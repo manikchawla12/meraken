@@ -4,8 +4,8 @@ const accessToken = async () => {
     const tokenUrl = `http://localhost:8080/o/oauth2/token`;
     const data = new URLSearchParams();
     data.append('grant_type', 'client_credentials');
-    data.append('client_id', "id-75e65845-b8b8-cec3-504f-c0ab11ba719");
-    data.append('client_secret', "secret-cbf6c1af-84ed-1bd8-31e6-c889d968162");
+    data.append('client_id', "");
+    data.append('client_secret', "");
 
     try {
         const response = await axios({
