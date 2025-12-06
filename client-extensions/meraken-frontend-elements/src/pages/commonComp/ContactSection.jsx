@@ -15,6 +15,7 @@ const ContactSection = ({ content }) => {
         return {
             headingPrimary: get("primaryText"),
             headingHighlight: get("highlightedText"),
+            endText: get("endText"),
             description: get("description"),
             buttonText: get("buttonText"),
             buttonLink: get("buttonLink"),
@@ -38,7 +39,8 @@ const ContactSection = ({ content }) => {
                 <div className="text-center">
                     <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
                         {data.headingPrimary}{" "}
-                        <span className="text-[#FF9345]">{data.headingHighlight}</span>?
+                        <span className="text-[#FF9345]">{data.headingHighlight}</span>
+                        {data.endText}
                     </h2>
 
                     <p

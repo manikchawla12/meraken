@@ -1,0 +1,48 @@
+import React from "react";
+import CommonServicePage from "../../commonComp/CommonServicePage";
+import WhatIsTech from "../../commonComp/WhatIsTech";
+import WhyItMatters from "../../commonComp/WhyItMatters";
+import RealWorldUseCase from "../../commonComp/RealWorldUseCase";
+import HowItWorks from "../../commonComp/HowItWorks";
+import WhoIsItFor from "../../commonComp/WhoIsItFor";
+import RealWorldImpact from "../../commonComp/RealWorldImpact";
+import HowItHelps from "../../commonComp/HowItHelps";
+import FAQsComp from "../../commonComp/FAQsComp";
+import ContactSection from "../../commonComp/ContactSection";
+import HeroComp from "../../commonComp/HeroComp";
+
+const urlPathMap = {
+    whatIsTech: "generativeaiwhatistech",
+    whyItMatters: "generativeaiwhyitmatters",
+    realWorldUseCase: "generativeairealworldusecase",
+    howItWorks: "generativeaihowitworks",
+    whoIsItFor: "generativeaiwhoisitfor",
+    realWorldImpact: "generativeairealworldimpact",
+    howItHelps: "generativeaihowithelps",
+    faqs: "generativeaifaqs",
+    contact: "generativeaicontact",
+    hero: "generativeaihero"
+};
+
+const componentMap = {
+    hero: HeroComp,
+    whatIsTech: WhatIsTech,
+    whyItMatters: WhyItMatters,
+    realWorldUseCase: RealWorldUseCase,
+    howItWorks: HowItWorks,
+    whoIsItFor: WhoIsItFor,
+    realWorldImpact: RealWorldImpact,
+    howItHelps: HowItHelps,
+    faqs: FAQsComp,
+    contact: ContactSection
+};
+
+const GenerativeAi = () => (
+    <CommonServicePage
+        folderName="Generative_AI"
+        urlPathMap={urlPathMap}
+        componentMap={componentMap}
+    />
+);
+
+export default GenerativeAi;
